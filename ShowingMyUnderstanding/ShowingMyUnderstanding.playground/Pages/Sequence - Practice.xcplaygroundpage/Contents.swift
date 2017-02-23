@@ -31,10 +31,33 @@ let canvas = Canvas(width: 300, height: 300)
 
 canvas.drawShapesWithBorders = false
 
-canvas.fillColor = Color(hue: 197, saturation: 64, brightness: 91, alpha: 50)
+canvas.fillColor = Color(hue: 197, saturation: 64, brightness: 91, alpha: 100)
 canvas.drawRectangle(bottomLeftX: 50, bottomLeftY: 60, width: 50, height: 160)
 
-canvas.drawEllipse(centreX: <#T##Int#>, centreY: <#T##Int#>, width: <#T##Int#>, height: <#T##Int#>, borderWidth: <#T##Int#>)
+canvas.fillColor = Color(hue: 197, saturation: 64, brightness: 91, alpha: 100)
+canvas.drawEllipse(centreX: 75, centreY: 60, width: 50, height: 50)
+
+canvas.fillColor = Color(hue: 197, saturation: 64, brightness: 91, alpha: 100)
+canvas.drawEllipse(centreX: 75, centreY: 220, width: 50, height: 50)
+
+
+
+canvas.fillColor = Color.purple
+canvas.drawRectangle(bottomLeftX: 200, bottomLeftY: 60, width: 50, height: 160)
+
+canvas.fillColor = Color.purple
+canvas.drawEllipse(centreX: 225, centreY: 60, width: 50, height: 50)
+
+canvas.fillColor = Color.purple
+canvas.drawEllipse(centreX: 225, centreY: 220, width: 50, height: 50)
+
+ canvas.lineColor = Color(hue: 197, saturation: 64, brightness: 91, alpha: 100)
+canvas.defaultLineWidth = 50
+canvas.drawLine(fromX: 150, fromY: 60, toX: 75, toY: 220)
+
+canvas.lineColor = Color.purple
+canvas.defaultLineWidth = 50
+canvas.drawLine(fromX: 150, fromY: 60, toX: 225, toY: 220)
 // Replace this comment and add your code below...
 
 
