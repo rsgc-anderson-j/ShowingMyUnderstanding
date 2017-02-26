@@ -30,10 +30,21 @@ import PlaygroundSupport
 
 
 let canvas = Canvas(width: 300, height: 300)
+//the top 2 lines of the rectangles
+for x in stride(from: 0, through: 300, by: 45) {
+  canvas.drawRectangle(bottomLeftX: x , bottomLeftY: 250, width: 25, height: 10, borderWidth: 1)
+    canvas.drawRectangle(bottomLeftX: x + 20 , bottomLeftY: 230, width: 25, height: 10, borderWidth: 1)}
 
-for x in stride(from: 0, through: 300, by: 25) {
-  canvas.drawRectangle(bottomLeftX: 0 , bottomLeftY: 250, width: 10, height: 5, borderWidth: 1)
-}
+//the middle 2 lines of the rectangles
+for x in stride(from: 0, through: 300, by: 45) {
+    canvas.drawRectangle(bottomLeftX: x , bottomLeftY: 150, width: 25, height: 10, borderWidth: 1)
+    canvas.drawRectangle(bottomLeftX: x + 20 , bottomLeftY: 130, width: 25, height: 10, borderWidth: 1)}
+
+//the bottom 2 lines of the rectangles
+for x in stride(from: 0, through: 300, by: 45) {
+    canvas.drawRectangle(bottomLeftX: x , bottomLeftY: 50, width: 25, height: 10, borderWidth: 1)
+    canvas.drawRectangle(bottomLeftX: x + 20 , bottomLeftY: 30, width: 25, height: 10, borderWidth: 1)}
+
 
 // Replace this comment and add your code below...
 
