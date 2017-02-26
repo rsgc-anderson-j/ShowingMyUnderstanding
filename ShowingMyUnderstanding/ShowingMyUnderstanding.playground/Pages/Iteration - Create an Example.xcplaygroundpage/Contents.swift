@@ -19,6 +19,51 @@ import PlaygroundSupport
 // Create canvas
 let canvas = Canvas(width: 300, height: 300)
 
+for x in stride(from: 10, through: 100, by: 10) {
+    
+    canvas.drawShapesWithBorders = true
+    canvas.drawShapesWithFill = false
+    canvas.borderColor = Color.black
+    canvas.drawEllipse(centreX:   150, centreY: 150, width: x, height: x, borderWidth: 1)
+   
+}
+for x in stride(from: 10, through: 100, by: 10) {
+    
+    canvas.drawShapesWithBorders = true
+    canvas.drawShapesWithFill = false
+    canvas.borderColor = Color.red
+    canvas.drawEllipse(centreX:   100, centreY: 100, width: x, height: x, borderWidth: 1)
+    
+}
+for x in stride(from: 10, through: 100, by: 10) {
+    
+    canvas.drawShapesWithBorders = true
+    canvas.drawShapesWithFill = false
+    canvas.borderColor = Color.orange
+    canvas.drawEllipse(centreX:   200, centreY: 200, width: x, height: x, borderWidth: 1)
+    
+}
+for x in stride(from: 10, through: 100, by: 10) {
+    
+    canvas.drawShapesWithBorders = true
+    canvas.drawShapesWithFill = false
+    canvas.borderColor = Color.blue
+    canvas.drawEllipse(centreX:   200, centreY: 100, width: x, height: x, borderWidth: 1)
+    
+}
+for x in stride(from: 10, through: 100, by: 10) {
+    
+    canvas.drawShapesWithBorders = true
+    canvas.drawShapesWithFill = false
+    canvas.borderColor = Color.green
+    canvas.drawEllipse(centreX:   100, centreY: 200, width: x, height: x, borderWidth: 1)
+    
+}
+
+
+
+    
+
 // Replace this comment and add your code below...
 
 /*:

@@ -27,7 +27,13 @@ import Cocoa
 import PlaygroundSupport
 
 // Create canvas
+
+
 let canvas = Canvas(width: 300, height: 300)
+
+for x in stride(from: 0, through: 300, by: 25) {
+  canvas.drawRectangle(bottomLeftX: 0 , bottomLeftY: 250, width: 10, height: 5, borderWidth: 1)
+}
 
 // Replace this comment and add your code below...
 
