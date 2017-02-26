@@ -19,50 +19,39 @@ import PlaygroundSupport
 // Create canvas
 let canvas = Canvas(width: 300, height: 300)
 
+canvas.drawShapesWithBorders = true
+canvas.drawShapesWithFill = false
+
+//first circle in the middle
 for x in stride(from: 10, through: 100, by: 10) {
-    
-    canvas.drawShapesWithBorders = true
-    canvas.drawShapesWithFill = false
     canvas.borderColor = Color.black
     canvas.drawEllipse(centreX:   150, centreY: 150, width: x, height: x, borderWidth: 1)
    
 }
+//red circle in the bottom left
 for x in stride(from: 10, through: 100, by: 10) {
-    
-    canvas.drawShapesWithBorders = true
-    canvas.drawShapesWithFill = false
     canvas.borderColor = Color.red
     canvas.drawEllipse(centreX:   100, centreY: 100, width: x, height: x, borderWidth: 1)
     
 }
+//orange circle in the top right
 for x in stride(from: 10, through: 100, by: 10) {
-    
-    canvas.drawShapesWithBorders = true
-    canvas.drawShapesWithFill = false
     canvas.borderColor = Color.orange
     canvas.drawEllipse(centreX:   200, centreY: 200, width: x, height: x, borderWidth: 1)
     
 }
+//blue circle in the bottom right
 for x in stride(from: 10, through: 100, by: 10) {
-    
-    canvas.drawShapesWithBorders = true
-    canvas.drawShapesWithFill = false
     canvas.borderColor = Color.blue
     canvas.drawEllipse(centreX:   200, centreY: 100, width: x, height: x, borderWidth: 1)
     
 }
+//green circle in the top left
 for x in stride(from: 10, through: 100, by: 10) {
-    
-    canvas.drawShapesWithBorders = true
-    canvas.drawShapesWithFill = false
     canvas.borderColor = Color.green
     canvas.drawEllipse(centreX:   100, centreY: 200, width: x, height: x, borderWidth: 1)
     
 }
-
-
-
-    
 
 // Replace this comment and add your code below...
 
