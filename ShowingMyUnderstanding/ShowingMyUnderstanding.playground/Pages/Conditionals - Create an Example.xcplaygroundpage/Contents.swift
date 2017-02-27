@@ -19,7 +19,21 @@ import PlaygroundSupport
 // Create canvas
 let canvas = Canvas(width: 300, height: 300)
 
-// Replace this command and add your code below...
+let number = random(from: 0, toButNotIncluding: 10)
+
+if number >= 5 {
+    canvas.fillColor = Color.purple
+    canvas.drawEllipse(centreX: 150, centreY: 150, width: 100, height: 100, borderWidth: 1)
+    canvas.fillColor = Color.orange
+    canvas.drawEllipse(centreX: 150, centreY: 150, width: 50, height: 50, borderWidth: 1)
+}
+
+else if number <= 4 {
+    canvas.fillColor = Color.orange
+    canvas.drawRectangle(bottomLeftX: 100, bottomLeftY: 100, width: 100, height: 100, borderWidth: 1)
+    canvas.fillColor = Color.blue
+    canvas.drawRectangle(bottomLeftX: 100, bottomLeftY: 100, width: 50, height: 50, borderWidth: 1)
+}
 
 /*:
  ## Template code
