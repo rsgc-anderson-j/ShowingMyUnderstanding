@@ -31,6 +31,7 @@ let canvas = Canvas(width: 300, height: 300)
 
 canvas.drawShapesWithBorders = false
 
+//creating the blue half of the M with a rectangle and circles
 canvas.fillColor = Color(hue: 197, saturation: 64, brightness: 91, alpha: 100)
 canvas.drawRectangle(bottomLeftX: 50, bottomLeftY: 60, width: 50, height: 160)
 
@@ -41,7 +42,7 @@ canvas.fillColor = Color(hue: 197, saturation: 64, brightness: 91, alpha: 100)
 canvas.drawEllipse(centreX: 75, centreY: 220, width: 50, height: 50)
 
 
-
+//created the rest of the M using lines with rounded ends
 canvas.fillColor = Color.purple
 canvas.drawRectangle(bottomLeftX: 200, bottomLeftY: 60, width: 50, height: 160)
 

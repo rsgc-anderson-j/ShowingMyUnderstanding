@@ -30,8 +30,16 @@ let canvas = Canvas(width: 300, height: 300)
 // Generate a random number
 let number = random(from: 0, toButNotIncluding: 2)
 
-
-
+//if number is 0 epmty rectangle will be drawn
+if number == 0 {
+    canvas.fillColor = Color.white
+    canvas.drawRectangle(bottomLeftX: 50, bottomLeftY: 50, width: 50, height: 50, borderWidth: 1)
+}
+//if number is 1 black rectangle will be drawn
+if number == 1 {
+    canvas.fillColor = Color.black
+    canvas.drawRectangle(bottomLeftX: 50, bottomLeftY: 50, width: 50, height: 50, borderWidth: 1)
+}
 // Replace this comment and add your code below...
 
 /*:

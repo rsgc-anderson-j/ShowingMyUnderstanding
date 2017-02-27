@@ -31,6 +31,7 @@ import PlaygroundSupport
 
 let canvas = Canvas(width: 300, height: 300)
 //the top 2 lines of the rectangles
+//line 35 is an example of a loop
 for x in stride(from: 0, through: 300, by: 45) {
   canvas.drawRectangle(bottomLeftX: x , bottomLeftY: 250, width: 25, height: 10, borderWidth: 1)
     canvas.drawRectangle(bottomLeftX: x + 20 , bottomLeftY: 230, width: 25, height: 10, borderWidth: 1)}
